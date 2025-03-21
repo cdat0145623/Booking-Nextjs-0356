@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .spinner {
+        margin: 3.2rem auto 1.6rem;
+        width: 60px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 8px solid theme("colors.primary.900");
+        border-right-color: theme("colors.primary.200");
+        animation: rotate 1s infinite linear;
+    }
+
+    .spinner-mini {
+        margin: 0;
+        width: 20px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 2px solid theme("colors.primary.200");
+        border-right-color: transparent;
+        animation: rotate 1s infinite linear;
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+}
+
+.rdp-root {
+    --rdp-accent-color: #f0f0f0 !important; /* Change the accent color to indigo. */
+    --rdp-accent-background-color: #f0f0f0; /* Change the accent background color. */
+    /* Add more CSS variables here. */
+}
+
+/* .rdp {
+    --rdp-background-color: 
+    
+
+} */
+/* rgb(198 153 99) */
+
+/*
+
+--rdp-cell-size: 40px;
+    --rdp-caption-font-size: 18px;
+    --rdp-accent-color: #0000ff;
+    --rdp-background-color: #e7edff;
+    --rdp-accent-color-dark: #3003e1;
+    --rdp-background-color-dark: #180270;
+    --rdp-outline: 2px solid var(--rdp-accent-color);
+    --rdp-outline-selected: 3px solid var(--rdp-accent-color);
+    --rdp-selected-color: #fff;
+    */
+
+/* .rdp-months {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 4px;
+} */
+
+/* For data picker */
+/*
+.rdp {
+  --rdp-cell-size: 32px !important;
+  --rdp-accent-color: theme('colors.accent.500') !important;
+  --rdp-background-color: theme('colors.accent.600') !important;
+  margin: 0 !important;
+}
+*/
